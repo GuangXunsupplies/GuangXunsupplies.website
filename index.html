@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuangXun Supplies</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        header nav a:hover {
+            background-color: #777;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 20px;
+        }
+
+        /* Product Gallery */
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width: 23%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .product-item p {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .testimonial-item {
+            margin-bottom: 15px;
+        }
+
+        /* Search Bar */
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #555;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .product-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-item {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            header nav {
+                flex-direction: column;
+            }
+
+            .search-container input[type="text"] {
+                width: 80%;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GuangXun Supplies</h1>
+    <p>Your Trusted Distributor of Quality Car Parts and Electronics</p>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="main-content">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At GuangXun Supplies, we specialize in providing top-quality car parts, electronics, and accessories from trusted manufacturers. We are committed to offering our customers reliable products at competitive prices, ensuring your satisfaction with every purchase. With worldwide shipping and excellent customer service, we strive to be your one-stop supplier for all your automotive and electronic needs.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <section id="engine-part-image" style="text-align: center; padding: 40px; background-color: #f9f9f9;">
+                    <h2>Car Engine Parts (Closeup 3D Render)</h2>
+                    <img src="car_engine_parts.jpg" alt="Car Engine Parts Closeup 3D Render" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                </section>
+                <p>Precision-crafted car engine parts displayed in a high-quality 3D render. Ideal for showcasing component detail to potential buyers.</p>
+                <p class="price">$120.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="samsung_foodcase.jpg" alt="Samsung Food Case Phone">
+                <p>Latest smartphones with top features and cutting-edge technology. A perfect choice for any tech enthusiast.</p>
+                <p class="price">$150.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="gaming_desktop.jpg" alt="Gaming Desktop">
+                <p>Powerful desktops designed for gaming, work, and entertainment. Built with the latest processors.</p>
+                <p class="price">$250.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="phone_accessories.jpg" alt="Phone Accessories">
+                <p>High-quality phone accessories including cases, chargers, and screen protectors.</p>
+                <p class="price">$20.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="ultra_hd_tv.jpg" alt="Ultra High Definition TV">
+                <p>Ultra-high definition LED and Smart TVs that offer an immersive viewing experience.</p>
+                <p class="price">$400.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="oil_filters.jpg" alt="Oil Filters">
+                <p>Durable oil filters designed to keep your engine running smoothly and efficiently.</p>
+                <p class="price">$25.00</p>
+            </div>
+
+            <div class="product-item">
+                <video width="320" height="240" controls>
+                    <source src="display_screen_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>High-quality display screens perfect for electronics repairs or upgrades.</p>
+                <p class="price">$170.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="gaming_laptop_image.jpg" alt="Gaming Laptop" width="320" height="240">
+                <p>Portable, lightweight laptops with the latest specs for work and gaming.</p>
+                <p class="price">$300.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="camera_image.jpg" alt="Camera" width="320" height="240">
+                <p>Professional-grade cameras for photography enthusiasts and professionals.</p>
+                <p class="price">$600.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="tablet_image.jpg" alt="Tablet" width="320" height="240">
+                <p>Powerful tablets designed for productivity, media, and entertainment.</p>
+                <p class="price">$250.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="earphones_image.jpg" alt="Earphones" width="320" height="240">
+                <p>High-quality earphones for an immersive listening experience.</p>
+                <p class="price">$5.00</p>
+            </div>
+
+            <div class="product-item">
+                <img src="smartwatch_image.jpg" alt="Smartwatch" width="320" height="240">
+                <p>Smartwatches with advanced features for tracking fitness and notifications.</p>
+                <p class="price">$20.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+
+                <h4>— Zhang Wei, Sales Manager at Shenzhen AutoParts Co., Ltd.</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“We’ve worked with them for over a year now. Communication is great, and they always meet order demands quickly.”</p>
+                <h4>— Li Na, Export Coordinator at Guangzhou PowerTech Electronics</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“Doing business with GuangXun Supplies福中 has helped us penetrate the African market better. They understand logistics well.”</p>
+                <h4>— Huang Ming, International Trade Director at ZTE Motors Supply</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“Professional, fast, and clear. They represent our brand properly and we’ve seen a boost in African orders since the partnership.”</p>
+                <h4>— Chen Bo, Overseas Sales Lead at SinoParts Global</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“As a distributor in Lagos, I’ve never had any delays or bad batches. GuangXun is the plug for reliable parts.”</p>
+                <h4>— David Okon, Dealer at Supreme Auto Lagos</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“I’ve been sourcing electronics from them for almost a year. Fair prices and top-notch customer support.”</p>
+                <h4>— Grace Uchenna, Retailer at TechZone Abuja</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“They deliver exactly what I order, with no stress. My customers trust me more now.”</p>
+                <h4>— Emeka Nwosu, Electronics Distributor in Asaba</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“I ordered oil filters in bulk for my garage in Houston, and they arrived quicker than expected. Great quality.”</p>
+                <h4>— Mike Sanders, Owner of Mike’s Auto Fix, Texas</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“Buying in wholesale from GuangXun was the smartest move for my startup shop. Affordable and dependable.”</p>
+                <h4>— Ashley Carter, E-commerce Store Owner, Florida</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>“It’s hard finding trustworthy international suppliers, but these guys delivered. Will order again.”</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="search-container">
+        <h2>Search Our Products</h2>
+        <input type="text" placeholder="Search products..." id="searchBar">
+        <button onclick="searchFunction()">Search</button>
+    </section>
+</div>
+
+<footer>
+    <div class="contact-info">
+        <p>Contact us at: info@guangxunsupplies.com | +234-XXX-XXX-XXXX</p>
+        <p>&copy; 2025 GuangXun Supplies. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function searchFunction() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let items = document.querySelectorAll('.product-item');
+        items.forEach(item => {
+            let text = item.innerText.toLowerCase();
+            item.style.display = text.includes(input) ? 'block' : 'none';
+        });
+    }
+</script src="script.js"> </script>
+</body>
+</html>

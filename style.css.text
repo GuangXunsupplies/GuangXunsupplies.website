@@ -1,0 +1,56 @@
+
+
+1. body {
+2.   font-family: sans-serif;
+3.   margin: 0;
+4.   padding: 0;
+5.   line-height: 1.6;
+6.   background: #f9f9f9;
+7.   color: #333;
+8. }
+
+9. header {
+10.   background: #222;
+11.   color: #fff;
+12.   padding: 20px;
+13.   text-align: center;
+14. }
+
+15. section {
+16.   padding: 20px;
+17.   border-bottom: 1px solid #ddd;
+18. }
+
+19. footer {
+20.   background: #222;
+21.   color: #fff;
+22.   text-align: center;
+23.   padding: 10px;
+24. }
+
+25. a {
+26.   background: #0066cc;
+27.   color: #fff;
+28.   padding: 10px;
+29.   text-decoration: none;
+30.   display: inline-block;
+31.   margin-top: 10px;
+32.   transition: background 0.3s ease;
+33. }
+
+34. a:hover {
+35.   background: #005bb5;
+36. }
+
+37. /* Mobile responsiveness */
+38. @media (max-width: 600px) {
+39.   body {
+40.     font-size: 16px;
+41.   }
+42.   header, section, footer {
+43.     padding: 10px;
+44.   }
+45.   a {
+46.     padding: 8px;
+47.   }
+48. }
